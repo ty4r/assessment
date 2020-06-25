@@ -17,6 +17,7 @@
     <button id="assessment">診断する</button>
     <div id="result-area"></div>
     <div id="tweet-area"></div>
+    <div id="watch"></div>
     <script src="assessment.js"></script>
         <script>
         var date = new Date();
@@ -28,7 +29,8 @@
         var minute = date.getMinutes();
         var second = date.getSeconds();
         var formatDay = "Japan Time: " + year + "." + month + "." + day + " " + hour + ":" + minute + ":" + second;
-        document.write(formatDay);
+        //document.write(formatDay);
+        document.getElementById("watch").innerHTML = formatDay;
     </script>
 </body>
 </html>
